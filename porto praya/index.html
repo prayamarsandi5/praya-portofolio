@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Start! | Praya Marsandi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="sao-theme">
+
+    <div class="overlay"></div>
+
+    <nav class="sao-nav">
+        <div class="logo">LINK <span>START</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">QUESTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="sao-window main-window">
+        <div class="window-header">
+            <span class="diamond"></span> PLAYER INFO <span class="diamond"></span>
+        </div>
+        <div class="window-content">
+            <div class="profile-section">
+                <div class="avatar-frame">
+                    <img src="PROFILE.jpeg" alt="Praya Marsandi">
+                </div>
+                <div class="player-stats">
+                    <h1>PRAYA MARSANDI <span class="highlight">DEV</span></h1>
+                    <p class="title">Level 99 Fullstack Developer</p>
+                    <div class="hp-bar-container">
+                        <span class="label">HP</span>
+                        <div class="hp-bar"><div class="hp-fill"></div></div>
+                    </div>
+                    <div class="hp-bar-container">
+                        <span class="label">MP</span>
+                        <div class="mp-bar"><div class="mp-fill"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <a href="#projects" class="sao-btn">VIEW QUESTS</a>
+                <a href="CV_PRAYA.pdf" class="sao-btn secondary" target="_blank">EXPORT DATA (CV)</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="sao-window about-window">
+        <div class="window-header">
+            <span class="diamond"></span> PLAYER HISTORY <span class="diamond"></span>
+        </div>
+        <div class="window-content">
+            <p style="margin-bottom: 20px;">Seorang pengembang web yang berfokus pada pembangunan antarmuka futuristik dan sistem backend yang kuat. Berdedikasi menyelesaikan setiap "Quest" pemrograman dengan efisiensi maksimal.</p>
+            
+            <div class="education-log">
+                <h3 class="highlight">Education Journey:</h3>
+                <div class="edu-item active">
+                    <p class="year">2024 - SEKARANG</p>
+                    <p class="school">Universitas Sugeng Hartono</p>
+                </div>
+                <div class="edu-item">
+                    <p class="year">2021 - 2024</p>
+                    <p class="school">SMK N 1 Purwojati</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="sao-window skills-window">
+        <div class="window-header">
+            <span class="diamond"></span> SKILL SLOTS <span class="diamond"></span>
+        </div>
+        <div class="window-content">
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-info"><span>HTML / CSS / JS</span><span>Lv. 95</span></div>
+                    <div class="exp-bar"><div class="exp-fill" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>PHP / Laravel</span><span>Lv. 88</span></div>
+                    <div class="exp-bar"><div class="exp-fill" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Database (MySQL)</span><span>Lv. 85</span></div>
+                    <div class="exp-bar"><div class="exp-fill" style="width: 85%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="sao-window quest-window">
+        <div class="window-header">
+            <span class="diamond"></span> QUEST LOG <span class="diamond"></span>
+        </div>
+        <div class="window-content">
+            <div class="quest-list">
+                <div class="quest-card rank-s" onclick="openQuest('Mind+', 'Platform kesehatan mental terintegrasi.', 'https://github.com/prayamarsandi5/mindplus1.git', 'Laravel, Tailwind, MySQL', 'mindplus.jpg')">
+                    <div class="quest-info">
+                        <h3>[RANK S] Mind+</h3>
+                        <p>Web Kesehatan Mental</p>
+                    </div>
+                    <span class="status">IN PROGRESS</span>
+                </div>
+
+                <div class="quest-card rank-a" onclick="openQuest('SAYURPRAYA', 'Katalog sayur pribadi berbasis web untuk manajemen belanja.', 'http://sayurpraya.lovestoblog.com/', 'PHP Native, CSS3, MySQL', 'sayurpraya.jpg')">
+                    <div class="quest-info">
+                        <h3>[RANK A] SAYURPRAYA</h3>
+                        <p>Katalog Sayur Pribadi</p>
+                    </div>
+                    <span class="status">COMPLETED</span>
+                </div>
+
+                <div class="quest-card rank-b planning" onclick="openQuest('Berlian Management', 'Sistem manajemen inventaris berlian dan perhiasan modern.', '#', 'React / Next.js, Firebase', 'planning.jpg')">
+                    <div class="quest-info">
+                        <h3>[RANK B] Berlian Management</h3>
+                        <p>Sistem Manajemen Inventaris</p>
+                    </div>
+                    <span class="status planning">PLANNING</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="sao-window contact-window">
+        <div class="window-header">
+            <span class="diamond"></span> SEND MESSAGE <span class="diamond"></span>
+        </div>
+        <div class="window-content">
+            <div class="contact-grid">
+                <a href="https://wa.me/628123456789" class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="mailto:emailkamu@gmail.com" class="contact-card">
+                    <i class="far fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/prayamarsandi5" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sao-modal" class="sao-modal">
+        <div class="modal-content">
+            <div class="window-header"><span class="diamond"></span> QUEST DETAIL</div>
+            <div class="window-content">
+                <div id="modal-img-container" class="modal-img"></div>
+                <h2 id="modal-title" class="highlight">TITLE</h2>
+                <div class="tech-stack"><strong>Tech Stack:</strong> <span id="modal-tech"></span></div>
+                <p id="modal-desc">Description</p>
+                <div class="modal-actions">
+                    <a href="" id="modal-link" target="_blank" class="sao-btn">ACCEPT QUEST</a>
+                    <button onclick="closeQuest()" class="sao-btn close-btn">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Aincrad System | Player: Praya Marsandi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
